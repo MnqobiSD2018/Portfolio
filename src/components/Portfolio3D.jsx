@@ -42,8 +42,8 @@ export default function Portfolio3D() {
       </div>
 
       {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-50 p-4 md:p-6">
-        <div className="flex justify-between items-center">
+      <nav className="absolute top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
+        <div className="flex justify-between items-center p-4 md:p-2">
           <div className="text-lg md:text-2xl font-bold text-white truncate">
             Mnqobi Samuel Dube
           </div>
@@ -92,7 +92,7 @@ export default function Portfolio3D() {
 
         {/* Mobile Navigation Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden absolute top-16 left-4 right-4 bg-black/95 backdrop-blur-sm p-4 rounded-lg border border-white/20">
+          <div className="md:hidden bg-black/95 backdrop-blur-md border-t border-white/10 px-4 pb-4">
             {sections.map((section) => (
               <button
                 key={section.id}
