@@ -88,15 +88,84 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Mobile responsiveness */
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  /* Reduce scrollbar width on mobile */
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Optimize text selection on mobile */
+  * {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 @media (max-width: 768px) {
   .text-8xl {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
   }
   .text-6xl {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    line-height: 1.1;
   }
   .text-5xl {
+    font-size: 1.875rem;
+    line-height: 1.2;
+  }
+  .text-4xl {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+  .text-3xl {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-8xl {
     font-size: 2rem;
+  }
+  .text-6xl {
+    font-size: 1.75rem;
+  }
+  .text-5xl {
+    font-size: 1.5rem;
+  }
+  .text-4xl {
+    font-size: 1.25rem;
+  }
+  .text-3xl {
+    font-size: 1.125rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .hover\:scale-105:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Landscape mobile optimizations */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .min-h-screen {
+    min-height: 100vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .h-screen {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
   }
 }
