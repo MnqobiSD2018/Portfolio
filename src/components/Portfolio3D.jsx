@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Mail, Phone, Linkedin, Github } from 'lucide-react';
 import LiquidEther from './LiquidEther';
 import IMGme from '../assets/me.jpg';
 import MyCV from '../assets/Mnqobi_Dube_CV.pdf';
@@ -394,20 +395,42 @@ function ContactSection() {
             <h3 className="text-xl md:text-2xl font-semibold mb-4">Contact Information</h3>
             <div className="space-y-3 md:space-y-4 text-left">
               <div className="flex items-center flex-wrap">
-                <span className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0"></span>
+                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                  <Mail className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-sm md:text-base break-all">samueldube123@gmail.com</span>
               </div>
               <div className="flex items-center">
-                <span className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0"></span>
+                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                  <Phone className="w-5 h-5 text-white" />
+                </div>
                 <span className="text-sm md:text-base">+263 78 807 7462</span>
               </div>
               <div className="flex items-center flex-wrap">
-                <span className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0"></span>
-                <span className="text-sm md:text-base break-all">linkedin.com/in/msamueldube</span>
+                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                  <Linkedin className="w-5 h-5 text-white" />
+                </div>
+                <a 
+                  href="https://linkedin.com/in/msamueldube" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm md:text-base break-all hover:text-purple-300 transition-colors"
+                >
+                  linkedin.com/in/msamueldube
+                </a>
               </div>
               <div className="flex items-center flex-wrap">
-                <span className="w-6 h-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0"></span>
-                <span className="text-sm md:text-base break-all">github.com/MnqobiSD2018</span>
+                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-4 flex-shrink-0 flex items-center justify-center">
+                  <Github className="w-5 h-5 text-white" />
+                </div>
+                <a 
+                  href="https://github.com/MnqobiSD2018" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm md:text-base break-all hover:text-purple-300 transition-colors"
+                >
+                  github.com/MnqobiSD2018
+                </a>
               </div>
             </div>
           </div>
